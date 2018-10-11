@@ -1,0 +1,377 @@
+{
+	"name": "",
+	"competences": {
+			"blue": "",
+			"yellow": "",
+			"orange": ["", ""],
+			"red" : ["", "", ""],
+			},
+	"From": "",
+	"ZombieMode" : ""
+}
+
+
+Blitz : Blitz
+
+A chaque fois que votre Survivant tue le dernier zombie d’une zone, il gagne 1
+Action de Déplacement gratuite à utiliser immédiatement. 
+
+
+Brelage : Webbing
+
+Tout Équipement dans l’inventaire du Survivant est considéré comme étant 
+équipé en main. 
+
+
+Immunité au Toxique : Toxic immunity
+
+Le Survivant est immunisé contre les Projections Toxiques. 
+(voir Toxic City Mall).
+
+
+Collectionneur [Type de Zombie] : Collector: [Zombie type]
+
+Le Survivant reçoit le double d’expérience chaque fois qu’il tue un Zombie du
+type spécifié. 
+
+
+
+Provocation : Taunt
+
+Le Survivant peut utiliser cette Compétence gratuitement, une fois à chacun de
+ses tours. Choisissez une Zone que votre Survivant peut voir. Tous les Zombies
+dans la Zone ciblée gagnent immédiatement une activation supplémentaire : ils
+essaient d’atteindre le Survivant qui les provoque par tous les moyens. Les
+Zombies provoqués ignorent tous les autres Survivants : ils ne les attaquent pas
+et traversent si besoin leur Zone pour atteindre le Survivant qui les provoque. 
+
+
+Putréfié : Rotten
+
+À la fin du Tour, si le Survivant n’a effectué aucune Action de Combat,
+conduit aucune voiture ni produit aucun pion Bruit, placez un pion Putréfié à
+côté de son socle. Tant qu’il a ce pion, le Survivant est totalement ignoré par
+tous les types de Zombies (sauf les Zombivants) et n’est pas considéré comme un
+pion   Bruit.   Les   Zombies   ne   l’attaquent   pas   et   passent   à   côté   de   lui.   Le
+Survivant perd son pion Putréfié s’il effectue une Action de Combat ou s’il fait 9
+du bruit. Même avec un pion Putréfié, le Survivant doit quand même dépenser des
+Actions supplémentaires pour sortir d’une Zone occupée par les Zombies. 
+
+
+Régénération : Regeneration
+
+À la fin de chaque tour de jeu, défaussez toutes les cartes Blessures reçues
+par  le Survivant.  La Régénération  ne fonctionne  pas si  le Survivant  a été
+éliminé. 
+
+
+Super Force : Super strength
+
+Considérez que les armes de Mêlée maniées par le Survivant ont une valeur de
+Dégâts de 3. 
+
+
+Profil bas : Low profil
+
+Le Survivant ne peut pas être ciblé par les attaques À distance alliées et ne
+peut pas être touché par les Attaques de voiture. Ignorez-le lorsque vous tirez
+ou conduisez dans la Zone où il se trouve. Il sera tout de même tué par les
+armes qui détruisent tout dans une Zone donnée, comme le Molotov. 
+
+
++1 Dégât avec [Équipement] : +1 Damage: [Type]
+
+Le survivant occasionne +1 de dégât avec l'équipement spécifié.
+Résultat maximum est toujours 6.
+
+
+2 Molotov valent mieux qu’1 : 2 cocktails are better than 1
+
+Le survivant reçoit deux cartes au lieu d'une seule lorsqu'il fabrique un 
+cocktail Molotov.
+
+Peut commencer au [Niveau de danger]
+: 
+Can start at [Danger Level]
+Permet au survivant de commencer au niveau de danger spécifique.
+Rigor Mortis
+:  
+Death grasp
+Lors d’une blessure, il n’y a pas besoin de défausser un équipement, sauf si 
+l’inventaire est plein évidemment.
+Sur un 6 : +1 dé À distance
+: 
+Roll 6: +1 die Ranged
+Sur un 6, le survivant bénéficie de +1 au combat à distance.
+Sur un 6 : +1 dé Combat
+: 
+Roll 6: +1 die Combat
+Sur un 6, le survivant bénéficie de +1 à au dé de combat ( mêlée ou distance).
+Sur un 6 : +1 dé Mêlée
+: 
+Roll 6: +1 die Melee
+Sur un 6, le survivant bénéficie de +1 au dé de combat en mêlée.
+10
+Soif de sang : [Type]
+: 
+Bloodlust: [Type]
+Pour une action, un survivant peut se déplacer de 2 zones jusqu’à une zone 
+contenant au moins 1 zombie. Il gagne ensuite une action [Type] gratuite. 
+Distributeur
+:  
+Distributor
+Utiliser cette compétence modifie l’étape d’invasion pendant le tour des 
+Zombies. Pendant cette étape, piochez autant de cartes Zombie qu’il y a de zones
+d’invasion. Assignez alors chaque carte à la zone d’invasion de votre choix, et 
+procédez ensuite à l’invasion des Zombies.
+Effraction
+: 
+Break-in
+Offre une action gratuite pour ouvrir une porte, même sans équipement adéquat,
+et sans bruit. Par contre, effraction ne permet pas de détruire une barricade. 
+L'action gratuite ne peut être utilisée que pour ouvrir une porte.
+Cuirassé : [type de Zombie]
+: 
+Dreadnought: [Zombie Type]
+Le Survivant ignore toutes les blessures provenant des zombies classiques du 
+type indiqué. 
+Frénésie : [Type]
+: 
+Frenzy: [Type]
+Toutes les armes de [Type] que portent le Survivant gagne +1 dé par blessure 
+dont souffre le Survivant. Les armes doubles gagnent 1 dé chacune, pour un total
+de +2 dés par blessure et par action de [Type] double. 
+Ange gardien
+:  
+Lifesaver
+Le Survivant peut utiliser cette compétence gratuitement, une fois à chacun de
+ses tours. Choisissez une zone adjacente contenant au moins 1 zombie. Tous les 
+Survivants amis de cette zone peuvent être rapatriés sur la zone du Survivant, 
+sans pénalité. Ce n’est pas un mouvement. Un Survivant peut refuser le sauvetage
+et rester sur la zone si son joueur le décide. La zone de départ et la zone 
+d’arriver doivent partager un chemin dégagé : un Survivant ne peut pas traverser
+des barricades, des clôtures ou des murs. Ange gardien ne peut pas être utilisé 
+par un Survivant dans une voiture ou dans une tour d’observation, ni ne peut 
+être utilisé pour rapatrier des Survivants dans une voiture ou une tour 
+d’observation. 
+À bout portant
+:  
+Point-blank
+Lors d’un tir à une distance de 0, le Survivant choisit librement ses cibles 
+pour chacune de ses actions de combat à distance et peut tuer n’importe quel 
+type de Zombies (y compris les Zombies Berserker). Ses armes de distance doivent
+néanmoins toujours infliger suffisamment de dégâts pour tuer ses cibles. 
+Faucheur : [type]
+: 
+Reaper: [type]
+Utiliser cette compétence lors de l’attribution des touches d’une Action 
+[type]. Une de ces touches tuent gratuitement un zombie identique supplémentaire
+de la même zone. Un seul zombie supplémentaire peut ainsi être tué par action. 
+11
+Poussée
+:  
+Shove
+Le Survivant peut utiliser cette compétence gratuitement, une fois à chacun de
+ses tours. Sélectionner une zone à une distance de 1 du Survivant. Tous les 
+zombies présents dans la zone du Survivant sont repoussés dans la zone 
+sélectionnée. Ce n’est pas un mouvement. La zone de départ et la zone d’arriver 
+doivent partager un chemin dégagé : un zombie ne peut pas traverser des 
+barricades, des clôtures ou des murs. Poussée ne peut pas être utilisé par un 
+Survivant dans une voiture. 
+Précision chirurgicale
+:  
+Steady hand
+Les figurines alliées sont ignorées lorsque le Survivant utilise une attaque à
+Distance ou qu’il conduit une voiture à travers une zone. Cette compétence ne 
+s’applique pas pour les armes à distance qui tuent tout sur une zone ciblée. 
+(comme le cocktail Molotov par exemple) 
+Tacticien
+:  
+Tactician
+Le tour du Survivant peut se résoudre n’importe quand pendant la phase des 
+joueurs, avant ou après n’importe quel tour d’un autre Survivant.
++1 Action
+: 
++1 Action
+Une action au choix gratuite par tour (rappel : une seule action de fouille par 
+tour !)
++1 De : Combat
+: 
++1 die: combat
+Le survivant lance 1 dé de plus lorsqu’il combat en mêlée ou qu’il tire
+.
++1 de : Mêlée
+: 
++
+1 die: melee
+Le survivant lanc
+e 1 dé de plus lorsqu’il combat en mêlée.
++1 de : Tir
+: 
++1 die: Ranged
+Le survivant lance 1 dé de plus lorsqu’il tire.
++1 action de combat
+: 
++1 die: combat
+Une action de combat gratuite par tour (tir ou mêlée au choix).
++1 action de mouvement
+: 
++1 free move Action
+Une action de mouvement gratuite par tour.
++1 action de fouille
+: 
++1 action of excavation 
+Une action de fouille gratuite par tour (rappel : une seule action de fouille 
+par tour !)
+12
++1 au dé en Combat
+: 
++1 to dice roll : combat
+Le survivant ajoute 1 aux résultats de ses dés lorsqu’il combat 
+en mêlée ou au
+tir (ex : au lieu de toucher sur 4+ avec le pistolet, il touchera sur 3+).
++1 au dé en Mêlée
+: 
++1 to dice roll : Melee
+Le survivant ajoute 1 aux résultats de se
+s dés lorsqu’il combat 
+en mêlée.
++1 au dé à distance
+: 
++1 to dice roll : Ranged
+Le survivant ajoute 1 aux résultats de ses dés lorsqu’il tire.
++1 en portée
+: 
++1 max Range
+La po
+rtée de tir maximum est augmentée d’une zone (ex 
+: la portée du pistolet 
+devient 0-2).
++1 Zone par mouvement
+: 
++1 Zone per move
+Lorsque le survivant effectue une action de mouvement, il peut se déplacer 
+d’une zone de plus
+.
+1 relance par tour
+: 
+1 Revival by turn 
+Une fois par tour, le survivant 
+peut relancer tous les dés d’une 
+action.
+2 Zones par action de mouvement
+: 
+2 Zones per action of movement 
+Lorsque le survivant effectue une action de mouvement, il peut 
+bouger de deux 
+zones au lieu d’une seule
+.
+Ambidextre
+:  
+Ambidextrous
+Le survivant traite toutes les armes de mêlée et de tir comme si elles avaient
+le symbole « duo » inscrit sur leurs cartes.
+Chef-né
+:  
+Born leader
+A chaque tour, durant son propre tour, le survivant désigne un autre survivant
+à qui il octroie une action gratuite. Cette action sera résolue lors du prochain
+tour du survivant qui en bénéficie.
+Destinée
+: 
+Destiny
+Une fois par tour, lorsqu’il retourne une carte équipement, le survivant peut 
+choisir de défausser cette carte et d’en piocher 
+une autre.
+As de la gâchette
+: 
+gunslinger
+Le survivant traite toutes les armes de tir comme si elles avaient le symbole 
+13
+« duo » inscrit sur leurs cartes.
+Charognard
+:  
+Hold your nose
+Une fois par tour, le survivant peut gratuitement d
+isposer d’une 
+action de 
+fouille dans une zone où il a éliminé un ou plusieurs zombies durant ce tour (y 
+compris dans une zone extérieure).
+C’est tout ce que t'as
+?
+: 
+is that all you’ve got?
+Quand le survivant est blessé, il perd un équipement mais ne reçoit pas de 
+blessure. S
+’
+il 
+n’a plus d’équipement ou ne veut 
+pas 
+défausser une carte 
+d’équipement, il reçoit une carte de blessure.
+Barricade
+: 
+lock it down
+Au prix d’une action 
+le survivant peut refermer une porte ouverte.
+Bruyant
+: 
+Loud
+Une fois par tour, le survivant peut faire beaucoup de bruit. Pour le reste du
+tour de jeu, la zone dans laquelle se trouve le survivant au moment où il use de
+cette compétence est considérée comme la plus bruyante du plateau de jeu.
+Chanceux
+: 
+Lucky
+Le survivant peut relancer une fois tous les dés de chacune de ses actions.
+Les deux font la paire
+: 
+Matching set!
+Quand le survivant pioche une arme avec le symbole Duo, il peut immédiatement 
+rechercher dans la pioche la seconde arme 
+du même type et s’en équiper. 
+La 
+pioche est ensuite mélangée.
+Médic
+: 
+Medic
+Une fois par tour, le survivant peut retirer une carte blessure à un survivant
+se trouvant dans la même zone que lui. Il peut aussi se soigner lui-même.
+Ninja
+: 
+Ninja
+Le survivant ne fait aucun bruit et ne compte donc pas comme un marqueur de 
+bruit. Il utilise ses armes et son équipement sans faire de bruit, même ceux qui
+sont normalement bruyants.
+Insaisissable
+: 
+Slippery
+Le survivant ne doit pas dépenser d’action
+s supplémentaires pour quitter une 
+zone occupée par des zombies.
+14
+Sniper
+: 
+Sniper
+Le survivant choisit librement ses cibles lors de ses tirs.
+Commence avec [X]
+: 
+starts with a [equipment]
+Le survivant débute le jeu avec l’équipement mentionné.
+Maître d’armes
+: 
+Swordmaster
+Le survivant traite toutes les armes de mêlée comme si elles avaient le 
+symbole « duo » inscrit sur leurs cartes.
+Coriace
+: 
+Tough
+Le survivant ignore la première attaque de zombie à chaque tour.
+Double détente
+: 
+Trick shot
+Lorsqu’il est équipé de deux armes de tir identiques, le 
+survivant peut t
+irer 
+sur deux zones différentes lors d’une action 
+de tir (une zone avec chaque arme).

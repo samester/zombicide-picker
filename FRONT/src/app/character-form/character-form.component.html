@@ -1,0 +1,90 @@
+<div class="no-style" style="margin-left: 4px">
+  <div class="container">
+
+    <div>
+      <h1>Personnage</h1>
+      <form (ngSubmit)="onSubmit(); characterForm.reset()" #characterForm="ngForm">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" class="form-control" id="name" required [(ngModel)]="name" name="name" #nameControl="ngModel">
+          <div [hidden]="nameControl.valid || nameControl.pristine" class="alert alert-danger">
+            Nom requis.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="blue">Compétence bleu</label>
+          <select class="form-control" id="blue" required [(ngModel)]="blue" name="blue" #blueControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="blueControl.valid || blueControl.pristine" class="alert alert-danger">
+            La competence Bleu est requise.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="yellow">Compétence Jaune</label>
+          <select class="form-control" id="yellow" required [(ngModel)]="yellow" name="yellow" #yellowControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="yellowControl.valid || yellowControl.pristine" class="alert alert-danger">
+            La competence Jaune est requise.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="orange">Compétences Orange</label>
+          <select class="form-control" id="orangeOne" required [(ngModel)]="orangeOne" name="orangeOne"
+            #orangeOneControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="orangeOneControl.valid || orangeOneControl.pristine" class="alert alert-danger">
+            La competence Orange est requise.
+          </div>
+          <select class="form-control" id="orangeTwo" required [(ngModel)]="orangeTwo" name="orangeTwo"
+            #orangeTwoControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="orangeTwoControl.valid || orangeTwoControl.pristine" class="alert alert-danger">
+            La competence Orange est requise.
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="red">Compétences Rouge</label>
+          <select class="form-control" id="redOne" required [(ngModel)]="redOne" name="redOne" #redOneControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="redOneControl.valid || redOneControl.pristine" class="alert alert-danger">
+            Cette competence Rouge est requise.
+          </div>
+          <select class="form-control" id="redTwo" required [(ngModel)]="redTwo" name="redTwo" #redTwoControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="redTwoControl.valid || redTwoControl.pristine" class="alert alert-danger">
+            Cette competence Rouge est requise.
+          </div>
+          <select class="form-control" id="redThree" required [(ngModel)]="redThree" name="redThree" #redThreeControl="ngModel">
+            <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+          </select>
+          <div [hidden]="redThreeControl.valid || redThreeControl.pristine" class="alert alert-danger">
+            Cette competence Rouge est requise.
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="from">Provient de</label>
+          <input type="text" class="form-control" id="from" required [(ngModel)]="from" name="from" #fromControl="ngModel">
+          <div [hidden]="fromControl.valid || fromControl.pristine" class="alert alert-danger">
+            Ce champs est requis.
+          </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-success" [disabled]="!characterForm.form.valid">Submit</button>
+
+      </form>
+    </div>

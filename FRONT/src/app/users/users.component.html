@@ -1,0 +1,49 @@
+<h1>Personnages</h1>
+<div class="row">
+  <div *ngIf="description != ''">
+    competence: {{description}}
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="h">
+        <tr class="h">
+          <th class="h">Nom</th>
+          <th class="h">Lvl bleu</th>
+          <th class="h">lvl jaune</th>
+          <th class="h">lvl orange</th>
+          <th class="h">lvl rouge</th>
+          <th class="h">provient de</th>
+        </tr>
+      </thead>
+      <tBody>
+        <tr class="char" *ngFor="let char of characters">
+          <ng-container>
+            <td>{{char.name}}</td>
+
+            <td class='blueComp'>
+              <div (click)="onClick(char.competences.blue)">{{char.competences.blue.fr}}</div>
+            </td>
+            <td class='yellowComp'>
+              <div (click)="onClick(char.competences.yellow)">{{char.competences.yellow.fr}}</div>
+            </td>
+            <td class='orangeComp'>
+              <div (click)="onClick(char.competences.orange[0])">{{char.competences.orange[0].fr}}</div>
+              <div (click)="onClick(char.competences.orange[1])">{{char.competences.orange[1].fr}}</div>
+            </td>
+            <td class='redComp'>
+              <div (click)="onClick(char.competences.red[0])">{{char.competences.red[0].fr}}</div>
+              <div (click)="onClick(char.competences.red[1])">{{char.competences.red[1].fr}}</div>
+              <div (click)="onClick(char.competences.red[2])">{{char.competences.red[2].fr}}</div>
+            </td>
+            <td>{{char.from}}</td>
+          </ng-container>
+        </tr>
+      </tBody>
+    </table>
+  </div>
+</div>
+<!-- 
+<div (click)="onTest()">
+  TEST ME
+</div> -->

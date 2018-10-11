@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li>
+      <i class="material-icons" [class.activated]="currentUrl == '/'" (click)="onClick('user')">supervised_user_circle</i>
+    </li>
+
+    <li>
+        <i class="material-icons" [class.activated]="currentUrl == '/newchar'" (click)="onClick('createChar')">person_add</i>
+      </li>
+
+    <li>
+      <i class="material-icons" [class.activated]="currentUrl == '/posts'" (click)="onClick('posts')">add_circle</i>
+    </li>
+  </ul>
+</nav>
