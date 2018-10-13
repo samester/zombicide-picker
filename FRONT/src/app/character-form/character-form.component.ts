@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import Competence from '../models/competence.model';
-import Character from '../models/character.model';
 import { CharacterService } from '../service/character.service';
 import { CompetenceService } from '../service/competence.service';
 
@@ -13,7 +12,7 @@ export class CharacterFormComponent implements OnInit {
 
   competences: Competence[];
   name: string = '';
-  from: string= '';
+  from: string = '';
   blue = ''
   yellow = ''
   orangeOne = '';
@@ -21,11 +20,19 @@ export class CharacterFormComponent implements OnInit {
   redOne = '';
   redTwo = '';
   redThree = '';
+  zombieMode = false;
+  blueZ = ''
+  yellowZ = ''
+  orangeZOne = '';
+  orangeZTwo = '';
+  redZOne = '';
+  redZTwo = '';
+  redZThree = '';
 
   constructor(
     private characterService: CharacterService,
     private competenceService: CompetenceService
-    ) { }
+  ) { }
 
   ngOnInit() {
     this.competenceService.getCompetences().subscribe(
@@ -45,24 +52,53 @@ export class CharacterFormComponent implements OnInit {
     this.redOne = ''
     this.redTwo = ''
     this.redThree = ''
-    
+
   }
 
   onSubmit() {
     const charToSave = {
       name: this.name,
       competences: {
-       blue: this.blue,
-       yellow: this.yellow,
-       orange: [this.orangeOne, this.orangeTwo],
-       red: [this.redOne, this.redTwo, this.redThree],
+        blue: this.blue,
+        yellow: this.yellow,
+        orange: [this.orangeOne, this.orangeTwo],
+        red: [this.redOne, this.redTwo, this.redThree],
       },
       from: this.from,
+      zombie: undefined,
     }
-      this.characterService.postCharacters(charToSave).subscribe(
-      (char) => {
-        this.newChar();
+    if (this.zombieMode) {
+      const zombie = {
+        name: `${this.name} Zombie`,
+        competences: {
+          blue: this.blueZ,
+          yellow: this.yellowZ,
+          orange: [this.orangeZOne, this.orangeZTwo],
+          red: [this.redZOne, this.redZTwo, this.redZThree],
+        },
+        from: this.from,
       }
-    )
+      this.characterService.postCharacters(zombie).subscribe(
+        (char) => {
+          charToSave.zombie = char._id;
+          this.characterService.postCharacters(charToSave).subscribe(
+            (char) => {
+              this.newChar();
+            }
+          );
+        }
+      )
+    } else {
+
+      this.characterService.postCharacters(charToSave).subscribe(
+        (char) => {
+          this.newChar();
+        }
+      );
+    }
+  }
+
+  onChange(value) {
+    this.zombieMode = value.checked;
   }
 }

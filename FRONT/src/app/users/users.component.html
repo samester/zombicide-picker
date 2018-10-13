@@ -17,10 +17,16 @@
         </tr>
       </thead>
       <tBody>
-        <tr class="char" *ngFor="let char of characters">
+        <tr class="char" *ngFor="let char of characters; index as index">
           <ng-container>
-            <td>{{char.name}}</td>
-
+            <td>
+              <div>
+                {{char.name}}
+              </div>
+              <div>
+                <mat-slide-toggle [hidden]="!char.zombie"  (change)="switchZombie(index)">Mode Zombie ?</mat-slide-toggle>
+              </div>
+            </td>
             <td class='blueComp'>
               <div (click)="onClick(char.competences.blue)">{{char.competences.blue.fr}}</div>
             </td>

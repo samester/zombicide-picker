@@ -82,9 +82,80 @@
             Ce champs est requis.
           </div>
         </div>
+        <div class="form-group">
+          <mat-slide-toggle (change)="onChange($event)">Mode Zombie ?</mat-slide-toggle>
+        </div>
+
+        <div *ngIf="zombieMode">
+
+          <div class="form-group">
+            <label for="blueZ">Compétence Zombie bleu</label>
+            <select class="form-control" id="blueZ" required [(ngModel)]="blueZ" name="blueZ" #blueZControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="blueZControl.valid || blueZControl.pristine" class="alert alert-danger">
+              La competence Zombie Bleu est requise.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="yellowZ">Compétence Zombie Jaune</label>
+            <select class="form-control" id="yellowZ" required [(ngModel)]="yellowZ" name="yellowZ" #yellowZControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="yellowZControl.valid || yellowZControl.pristine" class="alert alert-danger">
+              La competence Zombie Jaune est requise.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="orangeZ">Compétences Zombie Orange</label>
+            <select class="form-control" id="orangeZOne" required [(ngModel)]="orangeZOne" name="orangeZOne"
+              #orangeZOneControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="orangeZOneControl.valid || orangeZOneControl.pristine" class="alert alert-danger">
+              La competence Zombie Orange est requise.
+            </div>
+            <select class="form-control" id="orangeZTwo" required [(ngModel)]="orangeZTwo" name="orangeZTwo"
+              #orangeZTwoControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="orangeZTwoControl.valid || orangeZTwoControl.pristine" class="alert alert-danger">
+              La competence Zombie Orange est requise.
+            </div>
+          </div>
+  
+  
+          <div class="form-group">
+            <label for="redZ">Compétences Zombie Rouge</label>
+            <select class="form-control" id="redZOne" required [(ngModel)]="redZOne" name="redZOne" #redZOneControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="redZOneControl.valid || redZOneControl.pristine" class="alert alert-danger">
+              Cette competence Zombie Rouge est requise.
+            </div>
+            <select class="form-control" id="redZTwo" required [(ngModel)]="redZTwo" name="redZTwo" #redZTwoControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="redZTwoControl.valid || redZTwoControl.pristine" class="alert alert-danger">
+              Cette competence Zombie Rouge est requise.
+            </div>
+            <select class="form-control" id="redZThree" required [(ngModel)]="redZThree" name="redZThree" #redZThreeControl="ngModel">
+              <option *ngFor="let comp of competences" [ngValue]="comp.fr">{{comp.fr}}</option>
+            </select>
+            <div [hidden]="redZThreeControl.valid || redZThreeControl.pristine" class="alert alert-danger">
+              Cette competence Zombie Rouge est requise.
+            </div>
+          </div>
+
+        </div>
+
 
 
         <button type="submit" class="btn btn-success" [disabled]="!characterForm.form.valid">Submit</button>
+
+
 
       </form>
     </div>

@@ -10,20 +10,48 @@ import { CharacterService } from '../service/character.service';
 })
 export class UsersComponent implements OnInit {
 
+  allCharacters: Character[] = [];
   characters: Character[] = [];
   description = '';
+
   constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
     this.characterService.getCharacters().subscribe(
       (chars) => {
-        this.characters = chars;
-      } 
+        this.allCharacters = chars;
+        this.allCharacters.forEach(
+          (char) => {
+            if(!char.name.endsWith(' Zombie')) {
+              const newChar = new Character();
+              newChar.name = char.name;
+              newChar.competences = char.competences;
+              newChar.from = char.from;
+              newChar.zombie = char.zombie;
+              newChar._id = char._id;
+              this.characters.push(newChar);
+            }
+          }
+        )
+      }
     )
   }
 
   onClick(comp) {
     this.description = `${comp.fr} : ${comp.description}`;
+  }
+
+  switchZombie(index) {
+    if (this.characters[index].zombie) {
+      let charZombie = this.allCharacters.find(char => char._id === this.characters[index].zombie);
+      if (!charZombie.zombie) {
+        charZombie.zombie = this.characters[index]._id
+      }
+      this.characters[index].name = charZombie.name;
+      this.characters[index].competences = charZombie.competences;
+      this.characters[index]._id = charZombie._id;
+      this.characters[index].zombie = charZombie.zombie;
+    }
   }
 
   // onTest() {

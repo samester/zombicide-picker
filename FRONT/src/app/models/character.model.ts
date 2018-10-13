@@ -19,7 +19,7 @@ class Character {
   name: string;
   competences: CompetenceOfCharac;
   from: string;
-  zombie: Character;
+  zombie: string;
 
   constructor() {
     this.name = '';

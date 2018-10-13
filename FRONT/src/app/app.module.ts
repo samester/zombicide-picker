@@ -8,6 +8,8 @@ import { UsersComponent } from './users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CompetenceFormComponent } from './competence-form/competence-form.component';
 import { CharacterFormComponent } from './character-form/character-form.component';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CompetencesComponent } from './competences/competences.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +17,11 @@ import { CharacterFormComponent } from './character-form/character-form.componen
     SidebarComponent,
     UsersComponent,
     CompetenceFormComponent,
-    CharacterFormComponent
+    CharacterFormComponent,
+    CompetencesComponent
   ],
   imports: [
+    MatSlideToggleModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
