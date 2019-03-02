@@ -31,7 +31,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/zombicide')
   
   app.use('/api', api);
 
-  const port = 3000;
+  const port = 300;
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
